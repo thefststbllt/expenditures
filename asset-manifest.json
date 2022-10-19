@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/expenditures/static/css/main.fbf990c4.css",
-    "main.js": "/expenditures/static/js/main.d452be0d.js",
+    "main.js": "/expenditures/static/js/main.4e3247ae.js",
     "static/media/background-pattern.jpg": "/expenditures/static/media/background-pattern.5cfd1694808957d3b502.jpg",
     "static/media/shoked-krabs.png": "/expenditures/static/media/shoked-krabs.a35866faa1f57d4a1bb8.png",
     "static/media/suspicious-krabs.png": "/expenditures/static/media/suspicious-krabs.c88ed0621337f14313a8.png",
     "index.html": "/expenditures/index.html",
     "main.fbf990c4.css.map": "/expenditures/static/css/main.fbf990c4.css.map",
-    "main.d452be0d.js.map": "/expenditures/static/js/main.d452be0d.js.map"
+    "main.4e3247ae.js.map": "/expenditures/static/js/main.4e3247ae.js.map"
   },
   "entrypoints": [
     "static/css/main.fbf990c4.css",
-    "static/js/main.d452be0d.js"
+    "static/js/main.4e3247ae.js"
   ]
 }
