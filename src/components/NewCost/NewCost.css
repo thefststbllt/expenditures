@@ -7,6 +7,13 @@
     border-radius: 18px;
     text-align: center;
     box-shadow: 0 0 8px #00000040;
+    transition: .2s all;
+}
+
+.new-cost:hover,
+.new-cost:focus {
+    box-shadow: 0 0 8px #00000080;
+    transition: .2s all;
 }
 
 .new-cost button {
@@ -20,6 +27,7 @@
     border-radius: 10px;
     margin-right: 3px;
     transition: .1s all;
+    position: relative;
 }
 
 .new-cost button:hover {
@@ -34,4 +42,39 @@
     border-color: black;
     box-shadow: 0 0 4px chocolate;
     transition: 0s all;
+}
+
+@media (min-width: 768px) {
+
+    .new-cost__button-add:hover {
+        animation: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+            right: -100%;
+        }
+
+        to {
+            right: -80px;
+        }
+    }
+
+    .new-cost__button-add:hover::after {
+        content: '';
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: url("/img/suspicious-krabs.png") no-repeat content-box;
+        background-size: contain;
+        position: absolute;
+        top: -80%;
+        right: -80px;
+        animation: slidein 1s ease-out;
+
+    }
+
+    .new-cost__button-add:active::after {
+        background-image: url("/img/shoked-krabs.png");
+    }
 }

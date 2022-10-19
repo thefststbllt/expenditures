@@ -1,5 +1,5 @@
 .costs-filter {
-    color: black;
+    color: chocolate;
     padding: 0 1rem;
 }
 
@@ -18,7 +18,22 @@
 
 .costs-filter select {
     font: inherit;
+    color: white;
     padding: 0.5rem 3rem;
     font-weight: bold;
+    background-color: chocolate;
     border-radius: 6px;
+    border: 2px solid #EAEAEA;
+    box-shadow: 0 0 4px #00000040;
+    cursor: pointer;
+}
+
+.costs-filter select:hover,
+.costs-filter select:focus {
+    border-color: #757575;
+    box-shadow: 0 0 4px chocolate;
+}
+
+.costs-filter select:active {
+    color: black;
 }
