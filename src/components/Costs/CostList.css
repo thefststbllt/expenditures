@@ -1,0 +1,25 @@
+.cost-list {
+    list-style: none;
+    padding: 0;
+}
+
+.cost-list__no-expenditures {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.cost-list__no-expenditures span {
+    position: relative;
+    display: inline-block;
+    font-size: 30px;
+    color: chocolate;
+    font-weight: bold;
+    text-align: center;
+    animation: flip 3s infinite;
+    animation-delay: .2s;
+}
+@keyframes flip {
+    0%,80% {
+        transform: rotateY(360deg)
+    }
+}

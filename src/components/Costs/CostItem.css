@@ -6,6 +6,7 @@
     margin: 1rem 0;
     border-radius: 10px;
     box-shadow: 0 0 7px #00000040;
+    position: relative;
 }
 
 .cost-item__description {
@@ -34,6 +35,62 @@
     box-shadow: 0 0 4px #00000080;
     padding: 0.5rem;
     border-radius: 12px;
+}
+
+.cost-item__delete {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    background-color: #FFFFFF80;
+    box-shadow: 0 0 4px #000000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.cost-item__delete:before,
+.cost-item__delete:after {
+    content: '';
+    display: block;
+    border-radius: 1px;
+    width: calc(100% - 7px);
+    height: 2px;
+    background-color: chocolate;
+    position: absolute;
+    top: 11px;
+    right: 3px;
+}
+
+.cost-item__delete:before {
+    transform: rotate(45deg);
+}
+
+.cost-item__delete:after {
+    transform: rotate(-45deg);
+}
+
+.cost-item__delete:hover {
+    background-color: #ebc137;
+}
+
+.cost-item__delete:active::before,
+.cost-item__delete:active::after {
+    background-color: black;
+}
+
+.cost-item__delete span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 @media (min-width: 580px) {
