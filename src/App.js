@@ -4,6 +4,10 @@ import {useState, useEffect} from 'react';
 
 const App = () => {
 
+    if (!localStorage.costs) {
+        localStorage.setItem('costs', JSON.stringify([]));
+    }
+
     const [costs, setCosts] = useState(JSON.parse(localStorage.getItem('costs')).map((cost) => ({
         ...cost,
         date: new Date(cost.date)
