@@ -23,3 +23,9 @@
         transform: rotateY(360deg)
     }
 }
+
+@media (max-width: 767px) {
+    .cost-list__no-expenditures span {
+        font-size: 3.9vw;
+    }
+}

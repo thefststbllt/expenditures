@@ -6,3 +6,9 @@
     border-radius: 18px;
     box-shadow: 0 0 8px #00000040;
 }
+
+@media (max-width: 767px) {
+    .costs {
+        max-width: 80vw;
+    }
+}

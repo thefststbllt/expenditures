@@ -37,3 +37,18 @@
 .costs-filter select:active {
     color: black;
 }
+
+@media (max-width: 767px) {
+    .costs-filter {
+        padding: 0;
+    }
+
+    .costs-filter__control {
+        flex-direction: column;
+    }
+
+    .costs-filter select {
+        width: 100%;
+        text-align: center;
+    }
+}

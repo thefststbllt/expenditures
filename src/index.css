@@ -49,3 +49,17 @@ body {
     transform: rotateY(144deg)
   }
 }
+
+
+@media (max-width: 767px) {
+  .main-title {
+    display: flex;
+    align-items: center;
+    color: chocolate;
+    border: 2px solid #CCCCCC;
+    background-color: white;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 30px;
+  }
+}

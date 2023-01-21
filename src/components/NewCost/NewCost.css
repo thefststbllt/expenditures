@@ -78,3 +78,27 @@
         background-image: url("/img/shoked-krabs.png");
     }
 }
+
+@media (max-width: 767px) {
+    .new-cost {
+        max-width: 80vw;
+    }
+
+    .new-cost__control {
+        width: 100%;
+    }
+
+    .new-cost__control input {
+        width: 94%;
+    }
+
+    .new-cost__actions {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .new-cost button:not(:last-of-type) {
+        margin: 0 0 15px;
+    }
+}
